@@ -116,7 +116,7 @@
 }
 
 .contactme:hover{
-  color: #00796b;
+  color: #FA8072;
   background-color: white;
 }
 /* main body */
@@ -136,7 +136,7 @@ body {
 /* main a -- links */
 
 /* a {
-  color: #009688;
+  color: #FA8072;
 } */
 
 a {
@@ -469,7 +469,7 @@ a.hoverline {
 /* main a.hoverline */
 
 /* a.hoverline:hover {
-  border-bottom: 3px solid #24305e !important;
+  border-bottom: 3px solid #943904 !important;
 } */
 
 a.hoverline:hover {
@@ -553,7 +553,7 @@ small {
 }
 
 /* .teal-text {
-  color: #0b5e86 !important;
+  color: #943904 !important;
 } */
 
 /* .teal */
@@ -563,7 +563,7 @@ small {
 }
 
 /* .teal {
-  background-color: #00695c !important;
+  background-color: #943904 !important;
 } */
 
 @media (min-width: 1200px) {
