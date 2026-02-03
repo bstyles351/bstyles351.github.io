@@ -85,7 +85,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #FFDBBB;
+  color: #FA8072;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -140,7 +140,7 @@ body {
 } */
 
 a {
-  color: #FFDBBB;
+  color: #FA8072;
 }
 
 /* main blockqoute */
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #FFDBBB repeat;
+  background: #FA8072 repeat;
   position: relative;
 }
 
