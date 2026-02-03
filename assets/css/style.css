@@ -136,7 +136,7 @@ body {
 /* main a -- links */
 
 /* a {
-  color: #e3913a;
+  color: #FBCEB1;
 } */
 
 a {
@@ -318,9 +318,11 @@ h3 {
   background: url(../../assets/img/white-ai-wallpaper.jpg) no-repeat top center/cover;
   position: relative;
 } */
-
+/*
+I changed this to dark orange, what will it do?
+ */
 #intro.section {
-  background: #FBCEB1 repeat;
+  background: #943904 repeat;
   position: relative;
 }
 
