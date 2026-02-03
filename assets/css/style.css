@@ -546,19 +546,19 @@ small {
   color: #666 !important;
 }
 
-/* main .orange-text */
+/* main .teal-text */
 
-.orange-text {
+.teal-text {
   color: #943904 !important;
 }
 
-/* .orange-text {
+/* .teal-text {
   color: #0b5e86 !important;
 } */
 
-/* .orange */
+/* .teal */
 
-.orange {
+.teal {
   background-color: #943904 !important;
 }
 
@@ -602,7 +602,7 @@ small {
     position: absolute;
   }
   nav a.button-collapse, nav a.button-collapse i {
-    color: #ffab40;
+    color: #943904;
     height: 56px;
     line-height: 56px;
   }
