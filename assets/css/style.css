@@ -85,7 +85,7 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #FA8072;
+  color: #e3913a;
   border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
@@ -116,7 +116,7 @@
 }
 
 .contactme:hover{
-  color: #FA8072;
+  color: #e3913a;
   background-color: white;
 }
 /* main body */
@@ -136,11 +136,11 @@ body {
 /* main a -- links */
 
 /* a {
-  color: #FA8072;
+  color: #e3913a;
 } */
 
 a {
-  color: #FA8072;
+  color: #e3913a;
 }
 
 /* main blockqoute */
@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #FA8072 repeat;
+  background: #e3913a repeat;
   position: relative;
 }
 
