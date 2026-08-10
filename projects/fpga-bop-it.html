@@ -18,39 +18,39 @@
     <p class="project-tagline">Final project for logic design, a custom project imagined by my lab partner and me.</p>
     <p class="project-meta"><b>Tools:</b> Vivado, Nexys A7</p>
 
-    <img class="project-hero" src="/assets/img/Bop_it.png" alt="FPGA Bop-it project" />
-
     <section class="project-section">
       <h2>Core Problem</h2>
-      <p class="placeholder">[Add: what problem or challenge prompted this project, and what you set out to build.]</p>
+      <p>We sought to recreate a Bop-it using as many inputs we could on an FPGA board for our final project in Logic Design.</p>
     </section>
 
     <section class="project-section">
       <h2>Technical Contributions</h2>
       <ul>
-        <li>Used the built-in microphone, accelerometer, switches, and buttons.</li>
-        <li>Lit LEDs in a ticking sequence to indicate remaining time for task.</li>
-        <li>Programmed seven-segment display to simultaneously output the score and task using only one segment input.</li>
+        <li>Formulated the overall concept to recreate Bop-it for our final project for Logic Design.</li>
+        <li>Programmed seven-segment display to simultaneously output the score and task using only one segment input on two displays.</li>
+        <li>Developed code for overall game logic using a psuedo random number generator and state machines.</li>
       </ul>
+
+      <figure class="inline-figure">
+        <iframe src="https://www.youtube.com/embed/Ca9l6EBirik" title="FPGA Bop-it demo video" allowfullscreen></iframe>
+      </figure>
     </section>
 
     <section class="project-section">
       <h2>Design Choices</h2>
-      <p class="placeholder">[Add: key tradeoffs and why you chose this approach — e.g. state machine design, input handling.]</p>
+      <p>With guidance from our professor we set the parameters for the project as follows:The FPGA generates a task randomly. The player must complete the task in a set timeframe. Each successful round decreases the time you have in order to complete the next task. Our inputs included 1 Button, 1 Switch, microphone, reset button, accelerometer. Our outputs used All LEDs and the 7-Segment Display. The defining features of our game included: The FPGA must generate a random task. The system must display the task and score. The player must complete the task in the time constraint. Each successful round must increment the score and decrease the time to complete the next task. LEDs will count down from left to right to show time remaining on the current task. If the timer runs out or the wrong task is completed the game is over. Overall this project was a huge success. I was very proud of how fun the game was to play and how great it felt to play!</p>
     </section>
 
     <section class="project-section">
       <h2>Results</h2>
-      <p class="placeholder">[Add: any measurable outcomes — e.g. grade, demo reliability, positive feedback.]</p>
-    </section>
+      <ul>
+        <li>We received a grade of 107 on the project.</li>
+        <li>While doing our demo the TA had other TAs come to try out our game.</li>
+      </ul>
 
-    <section class="project-section media-section">
-      <h2>Media</h2>
-      <div class="media-grid">
-        <img src="/assets/img/Bop_it.png" alt="FPGA Bop-it project" />
-        <iframe src="https://www.youtube.com/embed/Ca9l6EBirik" title="FPGA Bop-it demo video" allowfullscreen></iframe>
-        <div class="media-placeholder">Add more photos or videos here</div>
-      </div>
+      <figure class="inline-figure">
+        <img src="/assets/img/Bop_it.png" alt="FPGA Bop-it schematic" />
+      </figure>
     </section>
   </div>
 </body>

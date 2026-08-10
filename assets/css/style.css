@@ -649,9 +649,17 @@ small {
 
 /* Project cards linking to detail pages */
 
+/* Cards size to their content so the button sits just under the title.
+   The row is flex + flex-start so uneven card heights wrap cleanly
+   instead of snagging on Materialize's floats. */
+#projects .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
 #projects .card.project-card {
   height: auto;
-  min-height: 420px;
   display: flex;
   flex-direction: column;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -666,10 +674,12 @@ small {
   flex: 0 0 auto;
 }
 
-/* flex-shrink must stay 0, or .card's overflow:hidden clips long descriptions */
+/* Materialize gives .card.medium .card-content a fixed height, which left a
+   large gap under short titles -- let it collapse to its content instead. */
 #projects .card.project-card .card-content {
-  flex: 1 0 auto;
-  padding-bottom: 20px;
+  flex: 0 0 auto;
+  height: auto;
+  padding-bottom: 16px;
 }
 
 #projects .card.project-card .card-content .card-title {
@@ -716,10 +726,9 @@ body.project-page {
   margin: 0;
 }
 
-/* Matches the 95% width the rest of the site's .container uses, so project
-   pages span the page instead of sitting in a narrow centered column. */
+/* Spans the page instead of sitting in a narrow centered column. */
 .project-page .project-container {
-  width: 95%;
+  width: 85%;
   margin: 0 auto;
   padding: 40px 0 80px;
 }
@@ -788,6 +797,50 @@ body.project-page {
   margin-bottom: 0;
 }
 
+/* Centre the page copy. Applied per-element rather than on the container so
+   the back link keeps its own alignment. */
+.project-page h1,
+.project-page .project-tagline,
+.project-page .project-meta,
+.project-page .project-section h2,
+.project-page .project-section p {
+  text-align: center;
+}
+
+/* Lists sit as a centred block with the rows left-aligned inside it, so the
+   markers line up in a column instead of going ragged. fit-content + auto
+   margins centre the block without needing a wrapper element. */
+.project-page .project-section ul {
+  list-style: none;
+  padding-left: 0;
+  width: fit-content;
+  max-width: min(680px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* padding-left + absolute marker gives a hanging indent, so a wrapped second
+   line lines up with the text above it rather than under the marker. */
+.project-page .project-section ul li {
+  list-style: none;
+  position: relative;
+  margin-left: 0;
+  padding-left: 26px;
+  line-height: 170%;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.project-page .project-section ul li:before {
+  content: "\25B8";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #943904;
+  font-weight: 700;
+}
+
 /* Capped and centred so a full-width section doesn't blow photos up past
    the height of the viewport on a wide screen. */
 .project-page figure.inline-figure {
@@ -799,16 +852,16 @@ body.project-page {
   padding: 12px;
 }
 
-.project-page figure.inline-figure img {
+.project-page figure.inline-figure img,
+.project-page figure.inline-figure iframe {
   width: 100%;
   border-radius: 2px;
   display: block;
 }
 
-.project-page .project-section ul li {
-  line-height: 180%;
-  list-style-type: disc;
-  margin-left: 24px;
+.project-page figure.inline-figure iframe {
+  aspect-ratio: 16 / 9;
+  border: 0;
 }
 
 .project-page .placeholder {
