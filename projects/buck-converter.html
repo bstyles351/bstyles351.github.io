@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <title>24V-24V Buck Converter | Bobby Styles</title>
+  <meta name="description" content="A 24V to 24V buck converter board designed in KiCad. In progress." />
+</head>
+
+<body class="project-page">
+  <div class="project-container">
+    <a href="/index.html#projects" class="back-link">Back to Projects</a>
+
+    <h1>24V-24V Buck Converter</h1>
+    <p class="project-tagline">A high power buck converter board designed from scratch to output 24V and 35A.</p>
+    <p><span class="in-progress-badge">In Progress</span></p>
+    <p class="project-meta"><b>Tools:</b> KiCad</p>
+
+    <section class="project-section">
+      <h2>Core Problem</h2>
+      <p>I sought to fix our custom buck/boost converters from last year's rover. The previous boards had issues with maintaining the boost portion and delivering the required current.</p>
+    </section>
+
+    <section class="project-section">
+      <h2>Technical Contributions</h2>
+      <ul>
+        <li>While troubleshooting the previous boards I elected to completely redesign the boards after it became uneconomical to fix.</li>
+        <li>Redid systems calculations with better intentionality noticing out current calculations were far too high.</li>
+        <li>Opted for a buck only design to increase efficiency, reduce heat, and further simplify design.</li>
+        <li>I used KiCad, Webench Power Designer, and soldering tools.</li>
+      </ul>
+
+      <figure class="inline-figure">
+        <img src="/assets/img/buck-converter-schematic.png" alt="24V-24V buck converter schematic" />
+      </figure>
+    </section>
+
+    <section class="project-section">
+      <h2>Design Choices</h2>
+      <p>With a focus on just a buck design and greatly reduced current needs I was able to use just one custom PCB as opposed to the three PCBs necessary for the initial design. The new design has lower power consumption, heat loss, size, and components. With less components I was able to add indicator LEDs to the input, output, and controller chip. By correcting the mistakes in the systems calculation I was able to avoid the need for a polyphase converter which reduces size and allows for exponentially easier troubleshooting. This is one of my favorite projects as it highlights two engineering aspects that are near and dear to my heart, intentionality and simplification!</p>
+    </section>
+
+    <section class="project-section">
+      <h2>Results</h2>
+      <p>Currently, the components are all ordered, and I am just awaiting their arrival to put it all together!</p>
+    </section>
+  </div>
+</body>
+
+</html>

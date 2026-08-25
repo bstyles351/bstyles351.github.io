@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+  <title>Tesla Coil | Bobby Styles</title>
+  <meta name="description" content="A 555-driven Tesla coil built around an IRFZ44N switching a 3-turn primary. In progress." />
+</head>
+
+<body class="project-page">
+  <div class="project-container">
+    <a href="/index.html#projects" class="back-link">Back to Projects</a>
+
+    <h1>Tesla Coil</h1>
+    <p class="project-tagline">A 555-driven Tesla coil switching a 3-turn primary against a 350-turn secondary.</p>
+    <p><span class="in-progress-badge">In Progress</span></p>
+    <p class="project-meta"><b>Tools:</b> KiCad</p>
+
+    <section class="project-section">
+      <h2>Core Problem</h2>
+      <p>This self-guided project challenged me to use MOSFETs as switching devices and wind my own inductors.</p>
+    </section>
+
+    <section class="project-section">
+      <h2>Technical Contributions</h2>
+      <ul>
+        <li>I created a simple circuit that would create a good size Tesla coil that should produce good size sparks.</li>
+        <li>KiCad was used for the design and the intention was to eventually create a PCB.</li>
+        <li>I used a drill press to create holes in a PVC pipe to create the tall inductor.</li>
+      </ul>
+
+      <figure class="inline-figure">
+        <img src="/assets/img/tesla-coil-schematic.png" alt="Tesla coil schematic: NE555P driving an IRFZ44N across a 3-turn primary coil" />
+      </figure>
+    </section>
+
+    <section class="project-section">
+      <h2>Design Choices</h2>
+      <p>For this project I challenged myself to use only components that were readily available in the undergraduate circuits lab, this naturally led me to use a 555 timer and a IRFZ44N MOSFET. These components are easy to come by and often well stocked in electronics labs. A potentiometer was used to allow for tunability of the 555 timer so that resonance could be achieved and the fun wireless power transfer would occur. Unfortunately, I was unable to find the resonant frequency and it either is outside of the potentiometer range or there are bugs in my circuit. I plan on using a function generator to find the resonant frequency and move the design from a bread board to a perfboard to reduce noise and potential for external impedance.</p>
+    </section>
+
+    <section class="project-section">
+      <h2>Results</h2>
+      <p>Currently, I have been unable to find the resonant frequency, my plan is to eventually purchase a function generator so that I can sweep all frequencies and find my needle in a haystack!</p>
+    </section>
+  </div>
+</body>
+
+</html>

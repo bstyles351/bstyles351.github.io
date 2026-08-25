@@ -647,6 +647,35 @@ small {
   }
 }
 
+/* "In Progress" badge. Amber picks up the accent from the intro typing text,
+   so it reads as a status flag rather than another rust heading or blue-grey
+   action. Base style is inline; the card rule pins it over the thumbnail. */
+.in-progress-badge {
+  display: inline-block;
+  background: #e3913a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+#projects .card-image .in-progress-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 1;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.project-page .in-progress-badge {
+  margin-bottom: 14px;
+}
+
 /* Project cards linking to detail pages */
 
 /* Cards size to their content so the button sits just under the title.
@@ -672,6 +701,7 @@ small {
 
 #projects .card.project-card .card-image {
   flex: 0 0 auto;
+  position: relative;
 }
 
 /* Materialize gives .card.medium .card-content a fixed height, which left a
